@@ -4,7 +4,7 @@ set -e
 # This script creates (or regenerates) configure (as well as aclocal.m4,
 # config.h.in, Makefile.in, etc.) missing in the source repository.
 
-libtoolize
+libtoolize -cf
 autoreconf -i
 
 echo
